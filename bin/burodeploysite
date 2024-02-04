@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+REPO_FOLDER=$(dirname $(dirname "$0"))
+
+
+printf "✍️ building site dist\n"
+npm run build
+
+printf "⏳ uploading saysheepsite to buro.earth\n"
+scp -r ./dist/* buroearth:/var/www/saysheep.com
+
+printf "🎉 site deployed!!!"

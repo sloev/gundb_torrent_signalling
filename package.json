@@ -1,0 +1,30 @@
+{
+  "name": "saysheep",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.html",
+  "scripts": {
+    "create_root_key": "node bin/create_root_keys.js",
+    "server": "node bin/server.js",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gun": "^0.2020.1239",
+    "leaflet": "^1.9.4",
+    "maplibre-gl": "^3.6.2",
+    "parcel": "^2.11.0",
+    "pmtiles": "^2.11.0",
+    "protomaps-leaflet": "^1.24.2",
+    "trystero": "^0.16.0",
+    "van-cone": "^0.0.7",
+    "vanjs-core": "^1.2.8",
+    "vanjs-ext": "^0.2.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}
