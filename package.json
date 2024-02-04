@@ -6,6 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "create_root_key": "node bin/create_root_keys.js",
+    "create_info_hash": "node bin/create_info_hash.js",
+    "tracker": "node bin/tracker.js",
     "server": "node bin/server.js",
     "start": "parcel",
     "build": "parcel build"
@@ -13,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bittorrent-tracker": "^11.0.1",
     "gun": "^0.2020.1239",
     "leaflet": "^1.9.4",
     "maplibre-gl": "^3.6.2",
@@ -25,6 +28,7 @@
     "vanjs-ext": "^0.2.0"
   },
   "devDependencies": {
-    "buffer": "^6.0.3"
+    "buffer": "^6.0.3",
+    "uint8-util": "^2.2.4"
   }
 }

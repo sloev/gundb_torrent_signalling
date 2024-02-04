@@ -6,7 +6,6 @@ import 'gun/lib/load.js'
 import 'gun/lib/promise.js'
 
 import {GunProxy} from './proxy'
-import {getStore} from '../store.js'
 
 let db = {
     tables : {
@@ -18,12 +17,6 @@ let db = {
 }
 
 export const setupDb = (config, creds) => {
-    const store = getStore()
-
-    if (store.dbIsLoading){
-        return db
-    }
-    store.dbIsLoading = true
 
 
     // instantiate module
@@ -43,7 +36,6 @@ export const setupDb = (config, creds) => {
         for (const table in db.tables) {
             db.tables[table] = gun.user(creds.serverPublicKey).get(table)
         }
-        store.dbIsLoading = false
     }
 
     setTimeout(setup, 100)
