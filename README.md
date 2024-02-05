@@ -22,7 +22,8 @@ an example on how to solve the problem of webrtc signalling for gundb by the use
         "appId": "gundb_torrent_signalling_test",
         "roomName": "test",
         "trackerUrls":["wss://tracker.com"]
-    }```
+    }
+    ```
 3. a set of public and private credentials for the app is created, resulting in creds.client.json and creds.server.json
 ```
 > npm run create_root_key
