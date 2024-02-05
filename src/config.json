@@ -1,6 +1,6 @@
 {
-    "infoHashHex": "336e61313135723532336e366a35333662347935",
-    "appId": "saysheep",
-    "roomName": "saysheep",
-    "trackerUrls":["wss://swarm.buro.earth"]
+    "infoHashHex": "3665367962366f34703164316e32353666357733",
+    "appId": "gundb_torrent_signalling_test",
+    "roomName": "test",
+    "trackerUrls":["wss://tracker.com"]
 }
